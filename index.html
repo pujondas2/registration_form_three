@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | Tech & Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <form action="form.html">
+        <legend>Create Account</legend>
+        <div class="form-area">
+            <div class="form-item">
+                <label for="firstname">First Name: <br>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter Your First Name" required>
+                </label>
+            </div>
+            <div class="form-item">
+                <label for="lastname">Last Name: <br>
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter Your First Name" required>
+                </label>
+            </div>
+            <div class="form-item">
+                <label for="age">Age: <br>
+                    <input type="number" name="age" id="age" min="15" max="80" value="15" required>
+                </label>
+            </div>
+            <div class="form-item">
+                <label for="email">E-mail: <br>
+                    <input type="email" name="email" id="email" pattern=".+gmail.com" title="Please type @gmail.com"
+                        placeholder="Enter Your E-mail" required>
+                </label>
+            </div>
+            <div class="form-item">
+                <label for="password">Password: <br>
+                    <input type="password" name="password" id="password" minlength="6" maxlength="10"
+                        title="6 to 10 character" placeholder="Enter Your Password" required>
+                </label>
+            </div>
+            <div class="form-item">
+                <label for="confirm-password"> Confirm Password: <br>
+                    <input type="password" name="confirm-password" id="confirm-password" minlength="6" maxlength="10"
+                        placeholder="Enter Your Password Again" required>
+                </label>
+            </div>
+            <div class="form-item">
+                <label for="gender">Gender: <br>
+                    <input type="radio" name="gender" id="male"><label for="male" class="black male">Male</label>
+                    <input type="radio" name="gender" id="female" checked><label for="female"
+                        class="black">Female</label>
+                </label>
+            </div>
+            <div class="form-item">
+                <label for="hobby">Hobbies: <br>
+                    <input type="checkbox" name="music" id="music"><label for="music" class="black">Music</label>
+                    <input type="checkbox" name="sport" id="sport"><label for="sport" class="black">Sports</label>
+                    <input type="checkbox" name="travel" id="travel"><label for="travel" class="black">Travel</label>
+                    <input type="checkbox" name="movie" id="movie"><label for="movie" class="black">Movies</label>
+                </label>
+            </div>
+            <div class="form-item">
+                <label for="source_income">Source of Income: <br>
+                    <select name="source_income" id="source_income">
+                        <option value="employed" selected>Employed</option>
+                        <option value="businessman">Business Man</option>
+                    </select>
+                </label>
+            </div>
+            <!-- <div class="form-item">
+                <label for="income">Income:
+                    <input type="range" name="income" id="income" step="25" min="1" max="100">
+                </label>
+            </div> -->
+            <div class="form-item">
+                <label for="upload">Upload Profile Picture: <br>
+                    <input type="file" name="upload" id="upload"> </label>
+            </div>
+            <div class="form-item-fullwidth">
+                <label for="bio">Bio: <br>
+                    <textarea name="bio" id="bio"></textarea>
+                </label>
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Create" class="submit_btn">
+        </div>
+    </form>
+
+</body>
+
+</html>
